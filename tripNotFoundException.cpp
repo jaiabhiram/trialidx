@@ -1,5 +1,3 @@
-#ifndef TRIP_NOT_FOUND_EXCEPTION_HPP
-#define TRIP_NOT_FOUND_EXCEPTION_HPP
 #pragma once
 #include <exception>
 #include <string>
@@ -14,5 +12,3 @@ public:
 private:
     std::string message;
 };
-
-#endif // TRIP_NOT_FOUND_EXCEPTION_HPP

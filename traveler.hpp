@@ -9,4 +9,5 @@ class Traveler : public User
         this->carNumber = carNumber;
     }
     string getCarNumber();
+    void addToTripHistory(string tripId);
 };

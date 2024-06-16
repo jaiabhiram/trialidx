@@ -6,11 +6,8 @@ Trip:: Trip(Traveler* driver,Location* startLoc, Location* endLoc) {
 };
 
 void Trip::addTravelerCompanion(TravelerCompanion* travelerCompanion) {
-    cout<<"hey"<<endl;
     status = TRIP_STATUS :: CRAETED;
-    cout<<"hey1"<<endl; 
     travelerCompanions.push_back(travelerCompanion);
-    cout<<"hey2"<<endl;
     cout<<travelerCompanions.size()<<endl;
 }
 
@@ -32,10 +29,21 @@ void Trip::addEvent(TripEvent* event)
     events.push_back(event);
 }
 
+void Trip::displayEvents()
+{
+    for(auto event : events)
+    event->displayEvent();
+}
+
 void Trip::displayFeedbacks()
 {
     for(auto x : feedbacks)
     {
-        // x->display();
+        x->displayFeedback();
     }
+}
+
+void Trip::addFeedback(Feedback* feedback)
+{
+    feedbacks.push_back(feedback);
 }

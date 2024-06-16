@@ -1,6 +1,6 @@
 #include "feedback.hpp"
 
-// void Feedback::display()
-// {
-//     cout<<user->getName()<<" "<<message<<endl;
-// }
+void Feedback::displayFeedback()
+{
+    cout<<user->getName()<<" "<<message<<endl;
+}

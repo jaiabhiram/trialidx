@@ -1,10 +1,10 @@
 #pragma once
-#include "common.cpp"
+#include "common.hpp"
 #include "user.hpp"
 #include "traveler.hpp"
 #include "travelerCompanion.cpp"
-#include "tripevent.cpp"
-#include "feedback.cpp"
+#include "tripevent.hpp"
+#include "feedback.hpp"
 class Trip
 {
     string tripId;
@@ -22,5 +22,7 @@ class Trip
     void setTripStatus(TRIP_STATUS status);
     void getTripDetails();
     void addEvent(TripEvent* event);
+    void displayEvents();
     void displayFeedbacks();
+    void addFeedback(Feedback* feedback);
 };
